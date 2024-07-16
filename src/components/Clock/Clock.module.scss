@@ -1,0 +1,86 @@
+.name {
+  margin-bottom: 16px;
+  max-width: 150px;
+  font: 600 20px "Nunito Sans", sans-serif;
+  overflow: hidden;
+}
+
+.close_btn {
+  position: absolute;
+  right: -20px;
+  top: -10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+.watch {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  background-color: #fff;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    mask-image: radial-gradient(circle at center, transparent 66%, #000 66.1%);
+    background-image: repeating-conic-gradient(
+        black 0 0.25%,
+        transparent 0.26% 6.24%,
+        black 6.25% 6.25%
+      ),
+      repeating-conic-gradient(
+        hsla(0, 0%, 37%, 0.2) 0% 0.25%,
+        transparent 0.26% 1.25%,
+        hsla(0, 0%, 37%, 0.2) 1.25% 1.25%
+      );
+  }
+}
+.point {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.hour,
+.min,
+.sec {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom;
+  background-color: #000;
+}
+
+.hour {
+  width: 3px;
+  height: 28px;
+}
+
+.min {
+  width: 2px;
+  height: 48px;
+  background-color: rgb(102, 102, 102);
+}
+
+.sec {
+  width: 1px;
+  height: 61px;
+  background-color: #ff0000;
+}

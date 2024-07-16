@@ -1,0 +1,46 @@
+.container {
+  margin: 30px auto;
+  max-width: 640px;
+}
+
+.title {
+  font: 400 18px "Nunito Sans", sans-serif;
+  margin-left: 10px;
+}
+
+.date_wrap {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 130px;
+}
+
+.form {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  padding: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #000;
+  font: 500 18px "Nunito Sans", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #a0a0a0;
+    color: #fff;
+  }
+}
+
+.clocks_wrapper {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
